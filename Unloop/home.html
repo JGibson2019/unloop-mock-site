@@ -1,0 +1,235 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+    <title>Re-entry Portal Mock-up</title>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="../bootstrap/css/bootstrap.min.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.0/jquery.min.js"></script>
+    <script src="../bootstrap/js/bootstrap.min.js"></script>
+    <style>
+        .alert-portal {
+        background-color:#D3D3D3;
+        border-color: grey;
+        color: black;
+        }
+        .alert-portal hr {
+        border-top-color: #D3D3D3;
+        }
+        .alert-portal .alert-link {
+        color: black;
+        }
+        .glyphicon-portal {
+        font-size: 20px;
+        }
+        .tooltip {
+        position: relative;
+        display: inline-block;
+        border-bottom: 1px dotted black; /* If you want dots under the hoverable text */
+        }
+        .btn-sm .tooltiptext {
+            visibility: hidden;
+            width: 120px;
+            background-color: black;
+            color: #fff;
+            text-align: center;
+            padding: 5px 0;
+            border-radius: 6px;
+        
+            /* Position the tooltip text - see examples below! */
+            position: absolute;
+            z-index: 1;
+        }
+
+        /* Show the tooltip text when you mouse over the tooltip container */
+        .btn-sm:hover .tooltiptext {
+            visibility: visible;
+        }
+    </style>
+</head>
+<body>
+
+<div class="container-fluid">
+    <nav class="navbar navbar-inverse">
+        <div class="container-fluid">
+            <!-- Brand and toggle get grouped for better mobile display -->
+            <div class="navbar-header">
+                <a class="navbar-brand" href="#">
+                    <i class="glyphicon glyphicon-leaf" aria-hidden="true"></i>
+                    <span>Re-entry Portal</span>
+                </a>
+            </div>
+            
+            <!-- Collect the nav links, forms, and other content for toggling -->
+            <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
+            <form class="navbar-form navbar-left">
+                <div class="form-group">
+                <input type="text" class="form-control" placeholder="Search for content">
+                </div>
+                <button type="submit" class="btn btn-default">Submit</button>
+            </form>
+            <ul class="nav navbar-nav navbar-right">
+                <li class="dropdown">
+                <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">Login <span class="caret"></span></a>
+                <ul class="dropdown-menu">
+                    <li><a href="#">Admin</a></li>
+                    <li><a href="#">Contributor</a></li>
+                    <li><a href="#">Request Contributor Access</a></li>
+                </ul>
+                </li>
+            </ul>
+            </div><!-- /.navbar-collapse -->
+        </div><!-- /.container-fluid -->
+    </nav> 
+    <div class="row">
+        <div class="col-lg-12"></div>
+    </div>
+    <div class="row">
+        <div class="col-lg-8">
+            <div class="alert alert-portal" role="alert">
+                    <button type="button" class="btn-sm btn-danger" style="float:right"> 
+                                <span class="glyphicon glyphicon-flag" aria-hidden="true"></span>
+                                <span class="tooltiptext">Report Outdated</span>
+                    </button>
+                <br />
+                <h3>
+                    <a href="https://esd.wa.gov/">Washington State Employment Security Department</a>
+                    <span class="glyphicon glyphicon-usd glyphicon-portal" aria-hidden="true" style="float:right"></span>
+                </h3>
+                <h5><strong>Contact</strong>: Jane Doe</h5>
+                <h5>
+                    <strong>Email</strong>: jane.doe@wa.gov
+                </h5>
+                <h5>
+                    <strong>Phone Number</strong>: 555-555-5555 ext. 1234
+                </h5>
+                <p>
+                    Pellentesque habitant morbi tristique senectus et netus et malesuada fames ac turpis egestas. 
+                    Vestibulum tortor quam, feugiat vitae, ultricies eget, tempor sit amet, ante. 
+                    Donec eu libero sit amet quam egestas semper. 
+                    Aenean ultricies mi vitae est. Mauris placerat eleifend leo.
+                </p>
+                <p>
+                    <h7 style=float:right><strong>Last updated</strong>: 20 July 2017</h7>
+                    <br>
+                </p>
+            </div>
+            <div class="alert alert-portal" role="alert">
+                 <button type="button" class="btn-sm btn-danger" style="float:right"> 
+                    <span class="glyphicon glyphicon-flag" aria-hidden="true"></span>
+                    <span class="tooltiptext">Report Outdated</span>
+                </button>
+                <br />
+                <h3>
+                    <a href="https://nwjustice.org/">The Northwest Justice Project</a>
+                    <span class="glyphicon glyphicon-briefcase" aria-hidden="true" style="float:right"></span>
+                </h3>
+                <h5><strong>Contact</strong>: Edgar Allen Poe</h5>
+                <h5>
+                    <strong>Email</strong>: e.a.poe@nwjustice.org
+                </h5>
+                <h5>
+                    <strong>Phone Number</strong>: 555-555-5555 ext. 1234
+                </h5>
+                <p>
+                    <ol>
+                        <li>Lorem ipsum dolor sit amet, consectetuer adipiscing elit.</li>
+                        <li>Aliquam tincidunt mauris eu risus.</li>
+                        <li>Vestibulum auctor dapibus neque.</li>
+                    </ol>
+                </p>
+                <p>
+                    <h7 style=float:right><strong>Last updated</strong>: 20 July 2017</h7>
+                    <br>
+                </p>
+            </div> 
+            <div class="alert alert-portal" role="alert">
+                <button type="button" class="btn-sm btn-danger" style="float:right"> 
+                    <span class="glyphicon glyphicon-flag" aria-hidden="true"></span>
+                    <span class="tooltiptext">Report Outdated</span>
+                </button>
+                <br />
+                <h3>
+                    <a href="https://www.goodwillwa.org/">Goodwill Industries</a>
+                    <span class="glyphicon glyphicon-usd" aria-hidden="true" style="float:right"></span>
+                    <span class="glyphicon glyphicon-shopping-cart" aria-hidden="true" style="float:right"></span>
+                </h3>
+                <h5><strong>Contact</strong>: Liz Lemon</h5>
+                <h5>
+                    <strong>Email</strong>: lemon_liz@seattle.goodwilla.org
+                </h5>
+                <h5>
+                    <strong>Phone Number</strong>: 555-555-5555 ext. 1234
+                </h5>
+                <p>
+                    <ul>
+                        <li>Morbi in sem quis dui placerat ornare. Pellentesque odio nisi, euismod in, pharetra a, ultricies in, diam. Sed arcu. Cras consequat.</li>
+                        <li>Praesent dapibus, neque id cursus faucibus, tortor neque egestas augue, eu vulputate magna eros eu erat. Aliquam erat volutpat. Nam dui mi, tincidunt quis, accumsan porttitor, facilisis luctus, metus.</li>
+                        <li>Phasellus ultrices nulla quis nibh. Quisque a lectus. Donec consectetuer ligula vulputate sem tristique cursus. Nam nulla quam, gravida non, commodo a, sodales sit amet, nisi.</li>
+                        <li>Pellentesque fermentum dolor. Aliquam quam lectus, facilisis auctor, ultrices ut, elementum vulputate, nunc.</li>
+                    </ul>
+                </p>
+                <p>
+                    <h7 style=float:right><strong>Last updated</strong>: 20 July 2017</h7>
+                    <br>
+                </p>
+            </div>
+            <div class="alert alert-portal" role="alert">
+                 <button type="button" class="btn-sm btn-danger" style="float:right"> 
+                    <span class="glyphicon glyphicon-flag" aria-hidden="true"></span>
+                    <span class="tooltiptext">Report Outdated</span>
+                </button>
+                <br />
+                <h3>
+                    <a href="http://bfcac.org/home-base/oxford-houses-of-wa-chapter-22">Oxford Houses Hotline - Benton County</a>
+                    <span class="glyphicon glyphicon-home" aria-hidden="true" style="float:right"></span>
+                </h3>
+                <h5><strong>Contact</strong>: Satya Mafella</h5>
+                <h5>
+                    <strong>Email</strong>: samafe@outreach.bfac.org
+                </h5>
+                <h5>
+                    <strong>Phone Number</strong>: 555-555-5555 ext. 1234
+                </h5>
+                <p>
+                    Pellentesque habitant morbi tristique senectus et netus et malesuada fames ac turpis egestas. 
+                    Vestibulum tortor quam, feugiat vitae, ultricies eget, tempor sit amet, ante. 
+                    Donec eu libero sit amet quam egestas semper. 
+                    Aenean ultricies mi vitae est. Mauris placerat eleifend leo.
+                </p>
+                <p>
+                    <h7 style=float:right><strong>Last updated</strong>: 20 July 2017</h7>
+                    <br>
+                </p>
+            </div>                        
+        </div>
+        <div class="col-lg-4" style="background-color:grey;">
+            <br> 
+            <form>
+                <div class="form-group">
+                    <label for="counties">Select your county (select one):</label>
+                    <select class="form-control" id="counties">
+                        <option>King County/Seattle</option>
+                        <option>Snohomish County/Everett</option>
+                        <option>Pierce County/Tacoma</option>
+                        <option>Skagit County/Mount Vernon</option>
+                    </select>
+                    <br>
+                    <label for="categories">Resources you're looking for (hold Shift to select more than one):</label>
+                    <select multiple class="form-control" id="categories">
+                        <option>Housing</option>
+                        <option>Employment</option>
+                        <option>Childcare</option>
+                        <option>Support Group</option>
+                        <option>Legal Help</option>
+                    </select>
+                    <br>
+                    <button type="button" class="btn btn-default btn-lg btn-block">Submit</button>
+                </div> 
+            </form>
+        </div>
+    </div>
+</div>
+
+</body>
+</html>
