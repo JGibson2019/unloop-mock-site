@@ -1,0 +1,183 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+    <title>Re-entry Portal Mock-up</title>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="../bootstrap/css/bootstrap.min.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.0/jquery.min.js"></script>
+    <script src="../bootstrap/js/bootstrap.min.js"></script>
+    <style>
+        .alert-portal {
+        background-color:#D3D3D3;
+        border-color: grey;
+        color: black;
+        }
+        .alert-portal hr {
+        border-top-color: #D3D3D3;
+        }
+        .alert-portal .alert-link {
+        color: black;
+        }
+        .glyphicon-portal {
+        font-size: 20px;
+        }
+        .tooltip {
+        position: relative;
+        display: inline-block;
+        border-bottom: 1px dotted black; /* If you want dots under the hoverable text */
+        }
+        .btn-sm .tooltiptext {
+            visibility: hidden;
+            width: 120px;
+            background-color: black;
+            color: #fff;
+            text-align: center;
+            padding: 5px 0;
+            border-radius: 6px;
+        
+            /* Position the tooltip text - see examples below! */
+            position: absolute;
+            z-index: 1;
+        }
+
+        /* Show the tooltip text when you mouse over the tooltip container */
+        .btn-sm:hover .tooltiptext {
+            visibility: visible;
+        }
+
+        .middleDiv {
+        border-left: 1px solid;
+        border-right: 1px solid;
+        }
+
+        .filter {
+            float: right;
+            margin: 0;
+            margin-right: 30px;
+        }
+
+        .un-loop-footer {
+            background-color: navy;
+        }
+
+        /* .bar {
+            border-bottom: 1px solid;
+        } */
+    </style>
+</head>
+<body>
+<div class="container-fluid">
+        <nav class="navbar navbar-inverse">
+            <div class="container-fluid">
+                <!-- Brand and toggle get grouped for better mobile display -->
+                <div class="navbar-header">
+                    <a class="navbar-brand" href="#">
+                        <i class="glyphicon glyphicon-leaf" aria-hidden="true"></i>
+                        <span>Re-entry Portal</span>
+                    </a>
+                </div>
+                
+                <!-- Collect the nav links, forms, and other content for toggling -->
+                <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
+                <ul class="nav navbar-nav navbar-right">
+                    <li class="dropdown">
+                    <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">Login <span class="caret"></span></a>
+                    <ul class="dropdown-menu">
+                        <li><a href="#">Admin</a></li>
+                        <li><a href="#">Contributor</a></li>
+                        <li><a href="#">Request Contributor Access</a></li>
+                    </ul>
+                    </li>
+                </ul>
+                </div><!-- /.navbar-collapse -->
+            </div><!-- /.container-fluid -->
+        </nav>
+        <div class="jumbotron">
+            <h1>Washington Re-Entry Connector</h1>
+            <h2>Resources for formerly incarcerated people</h2>
+            <p>The WA Reentry Connector is meant to help people in the state of 
+                Washington re-enter their communities following incarceration. This community-owned 
+                directory connects people with essential services – housing, education, legal, health, 
+                and more – that work with people with convictions. The goal is to help people begin 
+                and sustain their lives on the outside. This tool is designed by Unloop and maintained 
+                by a network of organizations and volunteers invested in the success of people coming 
+                out of prison.</p>
+                <p>Please help keep these resources updated by flagging and commenting on 
+                broken links or outdated service listings. Problem with the tool? 
+                Please email <strong><a href="mailto:info@un-loop.org">info@un-loop.org</a></strong>.</p>
+            </p>
+        </div>
+        <div class="row bar">
+            <div class="col-lg-4">
+                <h1>I'm looking for services in this county or these counties:</h1>
+                <h4><i>You can select multiple counties if applicable.</i></h4>
+                <div class="checkbox">
+                <label><input type="checkbox" value="">King County/Seattle</label>
+                </div>
+                <div class="checkbox">
+                <label><input type="checkbox" value="">Snohomish County/Everett</label>
+                </div>
+                <div class="checkbox">
+                <label><input type="checkbox" value="">Pierce County/Tacoma</label>
+                </div>
+                <div class="checkbox">
+                <label><input type="checkbox" value="">Skagit County/Mount Vernon</label>
+                </div>
+                <div class="checkbox">
+                <label><input type="checkbox" value="">No county requirements</label>
+                </div>
+            </div>
+            <div class="col-lg-4 middleDiv">
+                <h1>What services are you looking for?</h1>
+                <h4><i>You can select multiple services</i></h4> 
+                <div class="checkbox">
+                <label><input type="checkbox" value="">Housing</label>
+                </div>
+                <div class="checkbox">
+                <label><input type="checkbox" value="">Employment</label>
+                </div>
+                <div class="checkbox">
+                <label><input type="checkbox" value="">Childcare</label>
+                </div>
+                <div class="checkbox">
+                <label><input type="checkbox" value="">Support Group</label>
+                </div> 
+                <div class="checkbox">
+                <label><input type="checkbox" value="">Education</label>
+                </div>
+            </div>        
+            <div class="col-lg-4">
+                <h1>How would you like to filter services?</h1>      
+                <div class="radio">
+                    <label><input type="radio" name="optradio">Male</label>
+                    </div>
+                    <div class="radio">
+                    <label><input type="radio" name="optradio">Female</label>
+                    </div>
+                    <div class="radio">
+                    <label><input type="radio" name="optradio">Don't filter</label>
+                    </div>        
+                </div>
+        </div>
+            <br />
+        <div class="row bar">
+            <div class="col-lg-4">
+                <p>We ask for your county so that you are only shown services which match your release county. </p>
+            </div>
+            <div class="col-lg-4">
+                <p>This allows you to filter your results for the services you are looking for now. </p>            
+            </div>
+            <div class="col-lg-4">
+                <p>Some services are provided based on gender (like housing). You don't have to provide this; it just helps filter results.</p>
+            </div>
+        </div>
+        <div class="button bar">
+            <p><a class="btn btn-primary btn-lg filter" href="./home.html" role="button">Show results now</a></p>
+        </div>
+    </div>
+    <footer id="footer" class="un-loop-footer">
+        <h1></h1>
+    </footer>
+</body>            
+</html>
